@@ -112,7 +112,7 @@ async def main(show_or_write=1):
     fund_data_price = await crawler.price_getter(fund_code_df)
     
     # show or write
-    if show_or_write == 0: # show wonly
+    if show_or_write == 0: # show only
         fund_data_price_df = pd.DataFrame(fund_data_price)
         display(fund_data_price_df)
     elif show_or_write == 1: # write only
@@ -124,7 +124,7 @@ async def main(show_or_write=1):
     return None
 
 loop = asyncio.get_event_loop()
-result = loop.run_until_complete(main(1))
+result = loop.run_until_complete(main())
 
 
 

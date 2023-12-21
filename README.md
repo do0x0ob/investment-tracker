@@ -38,6 +38,8 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
     - [Investment Tracker.xlsx](https://github.com/do0x0ob/investment-tracker/files/13737284/Investment.Tracker.xlsx)
 - ***Rename the file and tab:*** 
     - Rename the file and tab name as your wish; this will be configured in  **step 4**.
+- ***List Your Funds in the SpreadSheet:***
+    - Customize your profolio with the fund name and currency ... etc.
 
 ### 4. Obtain Brand / Code Info of Your Target Funds
 - ***Open target website:*** 
@@ -55,9 +57,14 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
         result = loop.run_until_complete(main(1)) # write only
         result = loop.run_until_complete(main(2)) # both show and write
         ```
+        - Result should look likw this if displayed:  
+            ![image_here]
+        - If the paremeter was 1 or 2; SpreadSheet should Autofill the latest price like this:  
+            ![image_here]
+
 
 ### 6. Fill the Units to Calculate the Summary Value of All Listed Funds
-- Refer to the template below:  
+- Refer to the template below:   
     ![image here]
-- Use the built-in functions of spreadsheets to calculate the summerized value of all listed funds for today.  
+- Use the built-in functions of spreadsheets to calculate the summerized value of all listed funds for today.    
     ![image here]
