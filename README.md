@@ -35,9 +35,9 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 ### 3. Make a Copy of Google SpreadSheet Template
 - ***Duplicate from a template:***
-    - Link: `-------`
+    - [Investment Tracker.xlsx](https://github.com/do0x0ob/investment-tracker/files/13737284/Investment.Tracker.xlsx)
 - ***Rename the file and tab:*** 
-    - Rename the file and tab name as your wish; this will be configured in  **step 4**. 
+    - Rename the file and tab name as your wish; this will be configured in  **step 4**.
 
 ### 4. Obtain Brand / Code Info of Your Target Funds
 - ***Open target website:*** 
