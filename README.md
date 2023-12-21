@@ -45,7 +45,8 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 - ***Open target website:*** 
     - Visit www.stockq.org.
 - ***Get brand and code:*** 
-    - Refer to the URL to extract brand and code.
+    - Refer to the URL to extract brand and code.  
+      ![brand_and_code](https://github.com/do0x0ob/investment-tracker/assets/153002627/5223140c-6c8f-4eaa-adc9-cd7e8ada7def)
 - ***Fill the Info in SpreadSheet:*** 
     - Populate the spreadsheet with the acquired information.
 
@@ -58,13 +59,12 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
         result = loop.run_until_complete(main(2)) # both show and write
         ```
         - Result should look likw this if displayed:  
-            ![image_here]
+            ![result_display](https://github.com/do0x0ob/investment-tracker/assets/153002627/d69918b4-9714-4ebd-9c3c-800e7bff9e45)
+
         - If the paremeter was 1 or 2; SpreadSheet should Autofill the latest price like this:  
-            ![image_here]
+            ![result_only_write](https://github.com/do0x0ob/investment-tracker/assets/153002627/f475bc58-5e06-4251-a8ce-d842e018b91b)
+
 
 
 ### 6. Fill the Units to Calculate the Summary Value of All Listed Funds
-- Refer to the template below:   
-    ![image here]
-- Use the built-in functions of spreadsheets to calculate the summerized value of all listed funds for today.    
-    ![image here]
+- Use the built-in functions of spreadsheets to calculate the summerized value of all listed funds for today.
