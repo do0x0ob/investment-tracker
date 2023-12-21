@@ -41,7 +41,7 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 ### 4. Obtain Brand / Code Info of Your Target Funds
 1. ***Open target website:*** 
-    - Visit 'www.stockQ.com'.
+    - Visit www.stockq.org.
 2. ***Get brand and code:*** 
     - Refer to the URL to extract brand and code.
 3. ***Fill the Info in SpreadSheet:*** 
