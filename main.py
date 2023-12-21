@@ -5,11 +5,12 @@ import gspread
 import pandas as pd
 import configparser
 from oauth2client.service_account import ServiceAccountCredentials
-# from IPython.display import display
+from IPython.display import display
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
 
+# use these code if run in jupyternotebook
 # if 'IPKernelApp' in get_ipython().config:
 #     import nest_asyncio
 #     nest_asyncio.apply()
@@ -113,17 +114,17 @@ async def main(show_or_write=1):
     # show or write
     if show_or_write == 0: # show wonly
         fund_data_price_df = pd.DataFrame(fund_data_price)
-        # display(fund_data_price_df)
+        display(fund_data_price_df)
     elif show_or_write == 1: # write only
         sheet.write_data(fund_data_price)
     elif show_or_write == 2: # do both
         fund_data_price_df = pd.DataFrame(fund_data_price)
-        # display(fund_data_price_df)
+        display(fund_data_price_df)
         sheet.write_data(fund_data_price)
     return None
 
 loop = asyncio.get_event_loop()
-result = loop.run_until_complete(main())
+result = loop.run_until_complete(main(1))
 
 
 
