@@ -21,11 +21,7 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 - Use the following commands to install necessary packages.
     ```bash
-    pip install Ipython
-    pip install aiohttp
-    pip install bs4
-    pip install gspread
-    pip install lxml
+    pip install -r requirements.txt
     ```
 
 
