@@ -29,7 +29,7 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 - ***Put Key file:***
     - Drag your IAM key file into root directory.
 - ***Configure Key Path:***
-    - in `conif.ini`, specify the path for the key file.
+    - in `config.ini`, specify the path for the key file.
 - ***Configure Filename and Sheetname:*** 
     - in `config.ini`, specify your Google SpreadSheet's filename.
 
