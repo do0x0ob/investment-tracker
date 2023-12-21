@@ -26,25 +26,25 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 
 ### 2. Read / Write data from Goolgle Spreadsheet
-1. ***Put Key file:***
+- ***Put Key file:***
     - Drag your IAM key file into root directory.
-2. ***Configure Key Path:***
+- ***Configure Key Path:***
     - in `conif.ini`, specify the path for the key file.
-3. ***Configure Filename and Sheetname:*** 
+- ***Configure Filename and Sheetname:*** 
     - in `config.ini`, specify your Google SpreadSheet's filename.
 
 ### 3. Make a Copy of Google SpreadSheet Template
-1. ***Duplicate from a template:***
+- ***Duplicate from a template:***
     - Link: `-------`
-2. ***Rename the file and tab:*** 
+- ***Rename the file and tab:*** 
     - Rename the file and tab name as your wish; this will be configured in  **step 4**. 
 
 ### 4. Obtain Brand / Code Info of Your Target Funds
-1. ***Open target website:*** 
+- ***Open target website:*** 
     - Visit www.stockq.org.
-2. ***Get brand and code:*** 
+- ***Get brand and code:*** 
     - Refer to the URL to extract brand and code.
-3. ***Fill the Info in SpreadSheet:*** 
+- ***Fill the Info in SpreadSheet:*** 
     - Populate the spreadsheet with the acquired information.
 
 ### 5. Run the main.py File to Get Latest Price
