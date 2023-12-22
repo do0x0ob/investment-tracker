@@ -8,4 +8,4 @@ from utils import *
 
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
-    result = loop.run_until_complete(main(0))
+    result = loop.run_until_complete(main())
