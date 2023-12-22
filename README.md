@@ -3,7 +3,7 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 ## How to Use
 
-### 1. Create Venv and install depencency packages
+### 1. Create Venv and Install Depencency Packages
 - It's recommended to create a virtual enviroment. Follow these steps to create one:  
     ```bash
     # Skip this if 'venv' is already installed
