@@ -20,13 +20,13 @@ class Crawler:
 
 
     async def get_fund_data(self, brand, code):
-        url = self.config['web_crawler']['target_website_url'] + f'/{brand}/{code}'
+        url = self.config['Web_crawler']['target_website_url'] + f'/{brand}/{code}'
         try:
             html = await self.fetch_data(url)
             if html:
                 soup = BeautifulSoup(html,'lxml')
                 fund_name = soup.title.text.split(' ')[0]
-                raw_fund_price_dated = soup.select(self.config['web_crawler']['target_data_position'])
+                raw_fund_price_dated = soup.select(self.config['Web_crawler']['target_data_position'])
                 if raw_fund_price_dated: 
                     fund_price_dated = raw_fund_price_dated[0].text.replace('[[[', '').replace(']]]','')
                     return fund_name, fund_price_dated
@@ -50,6 +50,6 @@ class Crawler:
         fund_data = [{'Fund Name': name, 'Fund Price Latest': price} for name, price in results if name and price]
         return fund_data
     
-    async def price_getter(self, dataframe):
-        fund_data_price_df = await self.fetch_and_format_fund_data(dataframe)
-        return fund_data_price_df
+    async def price_getter(self, data):
+        fund_data_price = await self.fetch_and_format_fund_data(data)
+        return fund_data_price

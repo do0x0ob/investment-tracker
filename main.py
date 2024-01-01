@@ -1,5 +1,5 @@
 import asyncio
-from utils import *
+from utils import update_all_price
 
 # use these code if run in jupyternotebook
 # if 'IPKernelApp' in get_ipython().config:
@@ -9,3 +9,5 @@ from utils import *
 if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = loop.run_until_complete(update_all_price())
+
+

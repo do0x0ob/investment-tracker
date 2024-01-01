@@ -35,6 +35,10 @@ class InvestmentSheet:
         j = 2
 
         for i in data:
-            sheet.update_acell(f'H{j}', i['Fund Price Latest'])
+            if sheet_type == 'fund':
+                sheet.update_acell(f'H{j}', i['Fund Price Latest'])
+                print(f'updating fund price: {i}')
+            elif sheet_type == 'crypto':
+                print(f'updating crypto price: {i}')
+                sheet.update_acell(f'H{j}', i['Coin Price'])
             j += 1
-    
