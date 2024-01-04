@@ -1,3 +1,4 @@
 trackerenv/
 __pycache__/
 *.json
+*.sh
