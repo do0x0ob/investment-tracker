@@ -26,17 +26,24 @@ Combines Google Spreadsheets API and a web crawler to summarize currently invest
 
 
 ### 2. Read / Write data from Goolgle Spreadsheet
+#### Spread Sheets Setup 
 - ***Put Key file:***
     - Drag your IAM key file into root directory.
 - ***Configure Key Path:***
-    - in `config.ini`, specify the path for the key file.
+    - in `config.ini [spread_sheet] >> credentials_Path `, specify the path for the key file.
 - ***Configure Filename and Sheetname:*** 
-    - in `config.ini`, specify your Google SpreadSheet's filename.
+    - in `config.ini [spread_sheet] >> filename`, specify your Google SpreadSheet's filename.
+    - in `config.ini [spread_sheet] >> fund_spreadsheet_name`, specify the Google SpreadSheet's sheetname which included your fund codes.
+#### CoinMarketcap API Key Setup
+- ***Configure Key:***
+    - in `config.ini [CoinMarketCap] >> key`, Enter your key.
+- ***Configure Sheetname:***
+    - in `config.ini [spread_sheet] >> crypto_id_spreadsheet_name`, specify the Google SpreadSheet's sheetname which included your crypto coin ids.
 
 ### 3. Make a Copy of Google SpreadSheet Template
 - ***Duplicate from a template:***
-    - [Investment Tracker.xlsx](https://github.com/do0x0ob/investment-tracker/files/13737284/Investment.Tracker.xlsx)
-- ***Rename the file and tab:*** 
+    - [Investment Tracker Template.xlsx](https://github.com/do0x0ob/investment-tracker/files/13849644/Investment.Tracker.Template.xlsx)
+- ***Rename the file and tab:***
     - Rename the file and tab name as your wish; this will be configured in  **step 4**.
 - ***List Your Funds in the SpreadSheet:***
     - Customize your profolio with the fund name and currency ... etc.
