@@ -1,5 +1,6 @@
 #!/bin/bash
 
-source yourpath/investment-tracker/venv/trackerenv/bin/activate
-python3 /path/to/your/main.py
+cd <oyur path>/investment-tracker
+source <your venv name>/bin/activate
+python3 main.py
 deactivate
